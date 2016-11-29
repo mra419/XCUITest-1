@@ -32,15 +32,18 @@ class DepozaUITests: XCTestCase {
         tablesQuery.textFields["enter_amount"].tap()
         tablesQuery.textFields["enter_amount"].typeText("100")
         
-        tablesQuery.staticTexts["Clothes"].tap()
         
-        let enterDescriptionTextField = tablesQuery.textFields["enter_description"]
-        enterDescriptionTextField.tap()
-        enterDescriptionTextField.typeText("socks")
+        tablesQuery.staticTexts["EatingOut"].tap()
+        
+        let typeDescription = tablesQuery.textFields["enter_description"]
+        typeDescription.tap()
+        typeDescription.typeText("Fine Dinnig")
+        
         app.navigationBars["Add Expense"].buttons["Done"].tap()
         
-        let totalExpensesAmountStaticText = app.tables.staticTexts["total_expenses_amount"].label
-        XCTAssert(totalExpensesAmountStaticText == "100","actula amount is \(totalExpensesAmountStaticText)")
+        
+        let totalExpense = tablesQuery.staticTexts["total_expenses_amount"].label
+        XCTAssert(totalExpense == "100", "actual total amount \(totalExpense)")
         
     }
     
