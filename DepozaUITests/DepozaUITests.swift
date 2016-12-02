@@ -11,6 +11,7 @@ import XCTest
 class DepozaUITests: XCTestCase {
 
     let app = XCUIApplication()
+    let tablesQuery = XCUIApplication().tables
 
     override func setUp() {
         super.setUp()
@@ -25,7 +26,6 @@ class DepozaUITests: XCTestCase {
     
     func testAddingNewExpense() {
         app.buttons["add_button"].tap()
-        let tablesQuery = app.tables
         tablesQuery.textFields["enter_amount"].tap()
         tablesQuery.textFields["enter_amount"].typeText("100")
         
@@ -43,24 +43,20 @@ class DepozaUITests: XCTestCase {
         
     }
     
-    func testDeleteExpense() {
+    func testDeleteExpense(){
         testAddingNewExpense()
-
-        let tablesQuery = app.tables
-        print(app.debugDescription)
-
+        
         let expense_cell = tablesQuery.cells["cell_0"].staticTexts["Fine Dinnig"]
         waitForElementToAppear(format: "isHittable == true", element: expense_cell, time: 3.0)
         expense_cell.tap()
-        
+       
         let trashButton = app.navigationBars["Expense"].buttons["Trash"]
         trashButton.tap()
         
-        let deleteButton = app.alerts["Delete transaction?"].buttons["Delete"]
-        deleteButton.tap()
+        app.alerts["Delete transaction?"].buttons["Delete"].tap()
         
         let actual = tablesQuery.staticTexts["total_expenses_amount"].label
-        
+       
         XCTAssert(actual == "0", "Total amount is \(actual)")
         
         waitForElementToAppear(format: "self.count = 1", element: tablesQuery, time: 3.0)
