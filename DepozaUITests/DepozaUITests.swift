@@ -64,6 +64,28 @@ class DepozaUITests: XCTestCase {
         XCTAssertEqual(tablesQuery.cells.count, 0 , "found instead: \(tablesQuery.cells.debugDescription)")
     }
     
+    func testEditExpenseAmount(){
+        testAddingNewExpense()
+        
+        let expense_cell = tablesQuery.cells["cell_0"].staticTexts["Fine Dinnig"]
+        waitForElementToAppear(format: "isHittable == true", element: expense_cell, time: 3.0)
+        expense_cell.tap()
+        
+        let editButton = app.navigationBars["Expense"].buttons["Edit"]
+        editButton.tap()
+        
+        let expenseAmount = XCUIApplication().tables.cells.element(boundBy: 0)
+        expenseAmount.doubleTap()
+        expenseAmount.typeText("200")
+        let doneButton = app.navigationBars["Expense"].buttons["Done"]
+        doneButton.tap()
+        
+        let totalExpense = tablesQuery.staticTexts["total_expenses_amount"].label
+        XCTAssert(totalExpense == "200", "actual total amount \(totalExpense)")
+        
+
+    }
+    
     func waitForElementToAppear(format: String, element: AnyObject, time: Double){
         let exists = NSPredicate(format: format)
         expectation(for: exists, evaluatedWith:element, handler: nil)
