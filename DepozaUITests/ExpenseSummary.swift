@@ -12,15 +12,12 @@ class ExpenseSummary: BaseScreen {
     private let addExpenseButton = app.buttons["add_button"]
     private let totalAmount = table.staticTexts["total_expenses_amount"]
 
-    static var objectCount:Int = 0 {
-        didSet {
-            print("\(String(describing: self)) Count: \(objectCount)")
-        }
-    }
+    static var objectCount:Int = 0
 
     override init() {
        addExpenseButton.waitToExist()
        ExpenseSummary.objectCount+=1
+        print(ExpenseSummary.objectCount)
     }
     
     

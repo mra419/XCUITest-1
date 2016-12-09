@@ -5,5 +5,10 @@
         <page name='Strings'/>
         <page name='Array'/>
         <page name='Dictionary'/>
+        <page name='classes'/>
+        <page name='if_statement'/>
+        <page name='loops'/>
+        <page name='optionals'/>
+        <page name='Functions'/>
     </pages>
 </playground>
