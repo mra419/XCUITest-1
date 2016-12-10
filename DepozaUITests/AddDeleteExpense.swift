@@ -19,29 +19,16 @@ class DepozaUITests: BaseTest {
         super.tearDown()
     }
     
-    func testAddingNewExpense() {
-        let summary = ExpenseSummary()
-        summary.tapOnAddExpenseButton()
-        let addExpense = AddExpense()
-        addExpense.typeAmount(amount: "100")
-        addExpense.selecEatingOutCategory()
-        addExpense.typeExpesneDescription(description: "Fine Dinning")
-        addExpense.tapOnDoneButton()
-        
-        let totalExpense = summary.totalExpenseAmount()
-        
-        XCTAssert(totalExpense == "100", "Toral amount is \(totalExpense)")
-        
-    }
     
     func testDeleteExpense(){
-        testAddingNewExpense()
+        addingNewExpense()
         
-        var summary = ExpenseSummary()
+        let summary = ExpenseSummary()
         summary.tapOnExpenseCell(index: 0)
         let expenseDetails = ExpenseDetails()
         expenseDetails.tapOnTrashButton()
-        summary = expenseDetails.tapOnDeleteButton() as! ExpenseSummary
+        expenseDetails.tapOnDeleteButton()
+        summary.visit()
         let totalExpense = summary.totalExpenseAmount()
         
         XCTAssert(totalExpense == "0", "Toral amount is \(totalExpense)")
@@ -51,22 +38,6 @@ class DepozaUITests: BaseTest {
         
         XCTAssertEqual(expenseSummaryTable.cells.count, 0 , "found instead: \(expenseSummaryTable.cells.debugDescription)")
         
-    }
-    
-    func testEditExpenseAmount(){
-        testAddingNewExpense()
-        
-        var summary = ExpenseSummary()
-        summary.tapOnExpenseCell(index: 0)
-        let expenseDetails = ExpenseDetails()
-        expenseDetails.tapOnEditButton()
-        expenseDetails.typeIntoAmount(amount: "200")
-        summary = expenseDetails.tapOnDoneButton() as! ExpenseSummary
-        
-        
-        let totalExpense = summary.totalExpenseAmount()
-        XCTAssert(totalExpense == "200", "actual total amount \(totalExpense)")
-    
     }
     
 }

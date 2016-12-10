@@ -15,9 +15,15 @@ class ExpenseSummary: BaseScreen {
     static var objectCount:Int = 0
 
     override init() {
-       addExpenseButton.waitToExist()
+       super.init()
+       visit()
        ExpenseSummary.objectCount+=1
         print(ExpenseSummary.objectCount)
+    }
+    
+    func visit(){
+        print("visit has been called")
+        addExpenseButton.waitToExist()
     }
     
     
