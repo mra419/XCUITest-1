@@ -28,7 +28,7 @@ class DepozaUITests: BaseTest {
         let expenseDetails = ExpenseDetails()
         expenseDetails.tapOnTrashButton()
         expenseDetails.tapOnDeleteButton()
-        summary.visit()
+        summary.visible()
         let totalExpense = summary.totalExpenseAmount()
         
         XCTAssert(totalExpense == "0", "Toral amount is \(totalExpense)")

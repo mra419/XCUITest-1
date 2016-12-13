@@ -16,12 +16,12 @@ class ExpenseSummary: BaseScreen {
 
     override init() {
        super.init()
-       visit()
+       visible()
        ExpenseSummary.objectCount+=1
         print(ExpenseSummary.objectCount)
     }
     
-    func visit(){
+    func visible(){
         print("visit has been called")
         addExpenseButton.waitToExist()
     }

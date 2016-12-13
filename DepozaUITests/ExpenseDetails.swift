@@ -45,7 +45,7 @@ class ExpenseDetails: BaseScreen {
         tap(element: dateCell)
     }
     
-    func typeIntoAmount(amount: String) {
+    func typeNewAmount(amount: String) {
         typeAfterSelectAll(string: amount, field: expenseAmount)
     }
     

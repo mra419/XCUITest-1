@@ -27,10 +27,10 @@ class EditExpense: BaseTest {
         summary.tapOnExpenseCell(index: 0)
         let expenseDetails = ExpenseDetails()
         expenseDetails.tapOnEditButton()
-        expenseDetails.typeIntoAmount(amount: "200")
+        expenseDetails.typeNewAmount(amount: "200")
         expenseDetails.tapOnDoneButton()
         
-        summary.visit()
+        summary.visible()
         
         let totalExpense = summary.totalExpenseAmount()
         XCTAssert(totalExpense == "200", "actual total amount \(totalExpense)")

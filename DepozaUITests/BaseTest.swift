@@ -40,7 +40,7 @@ class BaseTest : XCTestCase {
         addExpense.typeExpesneDescription(description: "Fine Dinning")
         addExpense.tapOnDoneButton()
         
-        summary.visit()
+        summary.visible()
         
         let totalExpense = summary.totalExpenseAmount()
         
