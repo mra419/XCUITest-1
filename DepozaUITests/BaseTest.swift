@@ -48,7 +48,7 @@ class BaseTest : XCTestCase {
     
     }
     
-    func getFutureDate(daysFromToday: Int) -> (day : String, month : String){
+    func getDate(daysFromToday: Int) -> (day : String, month : String){
         var components = DateComponents()
         components.setValue(daysFromToday, for: .day)
         
@@ -63,8 +63,5 @@ class BaseTest : XCTestCase {
         
         return(futureDayString, futureMonthString )
     }
-
-
     
-        
 }

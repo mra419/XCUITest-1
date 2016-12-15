@@ -40,7 +40,7 @@ class EditExpense: BaseTest {
     
     func testEditDate(){
         //setting future day and month
-        let (day, month) = getFutureDate(daysFromToday: 20)
+        let (day, month) = getDate(daysFromToday: -20)
         print ("++++++++++++++Future day is \(day) and month is \(month)++++++++++++++++")
         
         addingNewExpense()
