@@ -20,15 +20,4 @@ for familyMember in familyMembers {
     
 }
 
-var numbers = [7, 2, 9, 4, 1]
-
-for (index, value) in numbers.enumerated() {
-    
-    numbers[index] += 1
-    
-}
-
-print (numbers)
-
-
 //: [Next](@next)

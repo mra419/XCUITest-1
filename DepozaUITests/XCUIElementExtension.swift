@@ -29,6 +29,7 @@ extension XCUIElement {
             CFRunLoopRunInMode(CFRunLoopMode.defaultMode, 0.1, true)
         }
     }
+<<<<<<< HEAD
 
     func forceTapElement() {
         if self.isHittable {
@@ -39,4 +40,6 @@ extension XCUIElement {
         }
     }
 
+=======
+>>>>>>> upstream/day4
 }

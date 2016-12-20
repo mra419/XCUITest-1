@@ -22,10 +22,13 @@ class BaseScreen {
         element.tap()
     }
     
+<<<<<<< HEAD
     func swipeLeft(element: XCUIElement){
         element.swipeLeft()
     }
     
+=======
+>>>>>>> upstream/day4
     func doubleTap(element: XCUIElement){
         element.doubleTap()
     }

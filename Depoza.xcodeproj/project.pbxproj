@@ -151,6 +151,14 @@
 		50FDE3B51A9B5EE4007C9FC0 /* CategoryInfoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FDE3B41A9B5EE4007C9FC0 /* CategoryInfoCollectionViewCell.m */; };
 		752C6E7A1BFC9AFA00320C92 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 752C6E781BFC9AFA00320C92 /* LaunchImage.png */; };
 		752C6E7B1BFC9AFA00320C92 /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 752C6E791BFC9AFA00320C92 /* LaunchImage@2x.png */; };
+		938AC2B81DFB7438003411FB /* EditExpense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938AC2B71DFB7438003411FB /* EditExpense.swift */; };
+		93EF299A1DEC393B00C37AFE /* AddDeleteExpense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EF29991DEC393B00C37AFE /* AddDeleteExpense.swift */; };
+		93F461DE1DF7A3490027BCBF /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F461DD1DF7A3490027BCBF /* BaseTest.swift */; };
+		93F461E41DF7A43F0027BCBF /* BaseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F461E01DF7A43F0027BCBF /* BaseScreen.swift */; };
+		93F461E51DF7A43F0027BCBF /* ExpenseSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F461E11DF7A43F0027BCBF /* ExpenseSummary.swift */; };
+		93F461E61DF7A43F0027BCBF /* AddExpense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F461E21DF7A43F0027BCBF /* AddExpense.swift */; };
+		93F461E71DF7A43F0027BCBF /* ExpenseDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F461E31DF7A43F0027BCBF /* ExpenseDetails.swift */; };
+		93F461EA1DF8B1600027BCBF /* XCUIElementExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F461E91DF8B1600027BCBF /* XCUIElementExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,6 +168,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 5015A5621AC02C230056271A;
 			remoteInfo = "Depoza Extension";
+		};
+		93EF299C1DEC393B00C37AFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 506E72781A1E0B450006F2DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 506E727F1A1E0B450006F2DF;
+			remoteInfo = Depoza;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -390,6 +405,16 @@
 		752C6E781BFC9AFA00320C92 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
 		752C6E791BFC9AFA00320C92 /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
 		7A809A823B6855AA3F640337 /* libPods-Depoza.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Depoza.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		938AC2B71DFB7438003411FB /* EditExpense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditExpense.swift; sourceTree = "<group>"; };
+		93EF29971DEC393A00C37AFE /* DepozaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DepozaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93EF29991DEC393B00C37AFE /* AddDeleteExpense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeleteExpense.swift; sourceTree = "<group>"; };
+		93EF299B1DEC393B00C37AFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93F461DD1DF7A3490027BCBF /* BaseTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTest.swift; sourceTree = "<group>"; };
+		93F461E01DF7A43F0027BCBF /* BaseScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseScreen.swift; sourceTree = "<group>"; };
+		93F461E11DF7A43F0027BCBF /* ExpenseSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseSummary.swift; sourceTree = "<group>"; };
+		93F461E21DF7A43F0027BCBF /* AddExpense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddExpense.swift; sourceTree = "<group>"; };
+		93F461E31DF7A43F0027BCBF /* ExpenseDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseDetails.swift; sourceTree = "<group>"; };
+		93F461E91DF8B1600027BCBF /* XCUIElementExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCUIElementExtension.swift; sourceTree = "<group>"; };
 		CFAB0BD41F48196056CD2126 /* Pods-Depoza.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Depoza.release.xcconfig"; path = "Pods/Target Support Files/Pods-Depoza/Pods-Depoza.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -408,6 +433,13 @@
 			files = (
 				502839131ACC11A700C97C99 /* CoreData.framework in Frameworks */,
 				4FD8F59DF7609828B91A5524 /* libPods-Depoza.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93EF29941DEC393A00C37AFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -803,6 +835,7 @@
 			children = (
 				506E72821A1E0B450006F2DF /* Depoza */,
 				5015A5661AC02C230056271A /* Depoza Extension */,
+				93EF29981DEC393A00C37AFE /* DepozaUITests */,
 				506E72811A1E0B450006F2DF /* Products */,
 				C73983BBCFAEFB03AF334D94 /* Frameworks */,
 				234B6EC76EA1C5143FF48666 /* Pods */,
@@ -814,6 +847,7 @@
 			children = (
 				506E72801A1E0B450006F2DF /* Depoza.app */,
 				5015A5631AC02C230056271A /* Depoza Extension.appex */,
+				93EF29971DEC393A00C37AFE /* DepozaUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -993,6 +1027,46 @@
 			name = MotionEffect;
 			sourceTree = "<group>";
 		};
+		93EF29981DEC393A00C37AFE /* DepozaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				93F461E81DF8B1380027BCBF /* Extensions */,
+				93F461DF1DF7A4020027BCBF /* Screens */,
+				93F461DC1DF7A3250027BCBF /* Tests */,
+				93EF299B1DEC393B00C37AFE /* Info.plist */,
+			);
+			path = DepozaUITests;
+			sourceTree = "<group>";
+		};
+		93F461DC1DF7A3250027BCBF /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				93EF29991DEC393B00C37AFE /* AddDeleteExpense.swift */,
+				93F461DD1DF7A3490027BCBF /* BaseTest.swift */,
+				938AC2B71DFB7438003411FB /* EditExpense.swift */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		93F461DF1DF7A4020027BCBF /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				93F461E01DF7A43F0027BCBF /* BaseScreen.swift */,
+				93F461E11DF7A43F0027BCBF /* ExpenseSummary.swift */,
+				93F461E21DF7A43F0027BCBF /* AddExpense.swift */,
+				93F461E31DF7A43F0027BCBF /* ExpenseDetails.swift */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
+		93F461E81DF8B1380027BCBF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				93F461E91DF8B1600027BCBF /* XCUIElementExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		C73983BBCFAEFB03AF334D94 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1048,6 +1122,24 @@
 			productReference = 506E72801A1E0B450006F2DF /* Depoza.app */;
 			productType = "com.apple.product-type.application";
 		};
+		93EF29961DEC393A00C37AFE /* DepozaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93EF299E1DEC393B00C37AFE /* Build configuration list for PBXNativeTarget "DepozaUITests" */;
+			buildPhases = (
+				93EF29931DEC393A00C37AFE /* Sources */,
+				93EF29941DEC393A00C37AFE /* Frameworks */,
+				93EF29951DEC393A00C37AFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93EF299D1DEC393B00C37AFE /* PBXTargetDependency */,
+			);
+			name = DepozaUITests;
+			productName = DepozaUITests;
+			productReference = 93EF29971DEC393A00C37AFE /* DepozaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1055,7 +1147,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = "";
-				LastSwiftUpdateCheck = 0800;
+				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Ivan Magda";
 				TargetAttributes = {
@@ -1084,6 +1176,12 @@
 							};
 						};
 					};
+					93EF29961DEC393A00C37AFE = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = D8746538W7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 506E727F1A1E0B450006F2DF;
+					};
 				};
 			};
 			buildConfigurationList = 506E727B1A1E0B450006F2DF /* Build configuration list for PBXProject "Depoza" */;
@@ -1102,6 +1200,7 @@
 			targets = (
 				506E727F1A1E0B450006F2DF /* Depoza */,
 				5015A5621AC02C230056271A /* Depoza Extension */,
+				93EF29961DEC393A00C37AFE /* DepozaUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -1185,6 +1284,13 @@
 				50C929D01B0B322100690F2C /* Content.png in Resources */,
 				42CE7FBA25C50B90BF5C3B26 /* SelectTimePeriodViewController.xib in Resources */,
 				42CE7590BF833A7FAB4495F5 /* HSDatePickerViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93EF29951DEC393A00C37AFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1339,6 +1445,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		93EF29931DEC393A00C37AFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93F461E71DF7A43F0027BCBF /* ExpenseDetails.swift in Sources */,
+				93F461E61DF7A43F0027BCBF /* AddExpense.swift in Sources */,
+				938AC2B81DFB7438003411FB /* EditExpense.swift in Sources */,
+				93F461DE1DF7A3490027BCBF /* BaseTest.swift in Sources */,
+				93EF299A1DEC393B00C37AFE /* AddDeleteExpense.swift in Sources */,
+				93F461EA1DF8B1600027BCBF /* XCUIElementExtension.swift in Sources */,
+				93F461E51DF7A43F0027BCBF /* ExpenseSummary.swift in Sources */,
+				93F461E41DF7A43F0027BCBF /* BaseScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1346,6 +1467,11 @@
 			isa = PBXTargetDependency;
 			target = 5015A5621AC02C230056271A /* Depoza Extension */;
 			targetProxy = 5015A56E1AC02C230056271A /* PBXContainerItemProxy */;
+		};
+		93EF299D1DEC393B00C37AFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 506E727F1A1E0B450006F2DF /* Depoza */;
+			targetProxy = 93EF299C1DEC393B00C37AFE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1585,6 +1711,51 @@
 			};
 			name = Release;
 		};
+		93EF299F1DEC393B00C37AFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = D8746538W7;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = DepozaUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bayqa.DepozaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Depoza;
+			};
+			name = Debug;
+		};
+		93EF29A01DEC393B00C37AFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = D8746538W7;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = DepozaUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bayqa.DepozaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Depoza;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1611,6 +1782,15 @@
 			buildConfigurations = (
 				506E72A71A1E0B450006F2DF /* Debug */,
 				506E72A81A1E0B450006F2DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93EF299E1DEC393B00C37AFE /* Build configuration list for PBXNativeTarget "DepozaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93EF299F1DEC393B00C37AFE /* Debug */,
+				93EF29A01DEC393B00C37AFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
